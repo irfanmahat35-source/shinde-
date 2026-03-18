@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahesh Dilip Shinde | Professional Video Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Outfit:wght@300;400;700;900&display=swap');
+        :root { --primary: #0062ff; }
+        body { background-color: #050505; color: #fff; font-family: 'Outfit', sans-serif; overflow-x: hidden; scroll-behavior: smooth; }
+        .bg-gradient-overlay { background: radial-gradient(circle at 15% 25%, rgba(0, 98, 255, 0.1) 0%, transparent 45%); position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+        .main-title { font-family: 'Syncopate', sans-serif; background: linear-gradient(90deg, #fff, var(--primary), #fff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: 10px; font-size: clamp(1.5rem, 6vw, 4rem); text-transform: uppercase; }
+        .section-compact { padding: 5rem 8%; }
+        .glass-card { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; transition: 0.5s ease; overflow: hidden; }
+        .glass-card:hover { border-color: var(--primary); transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0, 98, 255, 0.2); }
+        .btn-primary { background: var(--primary); color: #fff; padding: 0.8rem 2rem; font-weight: 900; text-transform: uppercase; letter-spacing: 2px; font-size: 0.7rem; border-radius: 6px; transition: 0.4s; display: inline-block; cursor: pointer; border: none; }
+        .section-title { font-size: 12px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.5em; border-left: 4px solid var(--primary); padding-left: 15px; margin-bottom: 35px; color: var(--primary); }
+        #mobile-menu { position: fixed; inset: 0; background: rgba(0,0,0,0.98); z-index: 100; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; transform: translateY(-100%); transition: 0.5s ease-in-out; }
+        #mobile-menu.active { transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+    <div class="bg-gradient-overlay"></div>
+
+    <nav class="fixed top-0 w-full p-4 flex justify-between items-center z-[110] bg-black/80 backdrop-blur-md border-b border-white/5">
+        <div class="text-xl font-black tracking-tighter uppercase italic text-white">MAHESH<span class="text-blue-600">.</span></div>
+        <div class="hidden md:flex gap-8 text-[9px] uppercase font-bold tracking-[0.4em] opacity-60">
+            <a href="#about" class="hover:text-blue-500 transition">About</a>
+            <a href="#skills" class="hover:text-blue-500 transition">Skills</a>
+            <a href="#portfolio" class="hover:text-blue-500 transition">Portfolio</a>
+            <a href="#contact" class="hover:text-blue-500 transition">Contact</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="https://drive.google.com/file/d/1Ir3JOhlJ8c7rTaYLeaWoARn54Au9fSjY/view?usp=sharing" target="_blank" class="btn-primary hidden md:block text-[8px]">Download CV</a>
+            <button onclick="toggleMenu()" class="md:hidden flex flex-col gap-1.5 focus:outline-none">
+                <span class="w-6 h-0.5 bg-white"></span>
+                <span class="w-6 h-0.5 bg-white"></span>
+                <span class="w-4 h-0.5 bg-white self-end"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu">
+        <a href="#about" onclick="toggleMenu()" class="text-2xl font-black uppercase tracking-widest">About</a>
+        <a href="#skills" onclick="toggleMenu()" class="text-2xl font-black uppercase tracking-widest text-blue-500">Skills</a>
+        <a href="#portfolio" onclick="toggleMenu()" class="text-2xl font-black uppercase tracking-widest">Portfolio</a>
+        <a href="#contact" onclick="toggleMenu()" class="text-2xl font-black uppercase tracking-widest">Contact</a>
+    </div>
+
+    <section class="flex flex-col items-center justify-center text-center px-6 pt-44 pb-20">
+        <div data-aos="zoom-out">
+            <p class="text-blue-500 tracking-[1.2em] text-[8px] font-bold uppercase mb-4">Professional Video Editor</p>
+            <h1 class="main-title font-black mb-4 leading-none text-white">MAHESH SHINDE</h1>
+            <p class="text-zinc-500 tracking-[0.4em] text-[10px] uppercase italic mb-10">Ready to leave a mark?</p>
+            <div class="flex gap-4 justify-center">
+                <a href="#portfolio" class="btn-primary">View Portfolio</a>
+                <a href="https://drive.google.com/file/d/1Ir3JOhlJ8c7rTaYLeaWoARn54Au9fSjY/view?usp=sharing" target="_blank" class="px-7 py-2.5 border border-white/10 text-white font-bold uppercase tracking-widest text-[8px] hover:bg-white hover:text-black transition rounded-md">Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-compact bg-white/5">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="aspect-[4/5] glass-card overflow-hidden" data-aos="fade-right">
+                <img src="user-1.png" alt="Mahesh Dilip Shinde" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-1000">
+            </div>
+            <div data-aos="fade-left" class="space-y-6">
+                <h3 class="section-title">The Storyteller</h3>
+                <h2 class="text-3xl font-black italic uppercase">MAHESH <span class="text-blue-500">SHINDE</span></h2>
+                <div class="text-zinc-400 text-sm space-y-4 font-light leading-relaxed">
+                    <p>I am <strong class="text-white">Mahesh Dilip Shinde</strong>, a professional Video Editor and Motion Designer dedicated to bringing stories to life through high-impact visuals.</p>
+                    <p>My goal is to make every frame unforgettable, whether it's through cinematic editing, seamless motion graphics, or commercial ads.</p>
+                </div>
+                <div class="pt-6 border-t border-white/5 space-y-2 text-[10px] uppercase tracking-widest font-bold">
+                    <p><span class="text-blue-500">Contact:</span> +91 98909 17829</p>
+                    <p><span class="text-blue-500">Mail:</span> shindemahesh0108@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-compact">
+        <div class="max-w-7xl mx-auto space-y-20">
+            <div>
+                <h3 class="section-title">Software Stack</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="glass-card p-6 flex items-center gap-5" data-aos="zoom-in">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" class="w-12 h-12">
+                        <div class="flex-1">
+                            <p class="text-[10px] font-black uppercase text-white">Premiere Pro</p>
+                            <div class="w-full h-[3px] bg-white/10 mt-3"><div class="w-[95%] h-full bg-blue-600 shadow-[0_0_10px_#0062ff]"></div></div>
+                        </div>
+                    </div>
+                    <div class="glass-card p-6 flex items-center gap-5" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" class="w-12 h-12">
+                        <div class="flex-1">
+                            <p class="text-[10px] font-black uppercase text-white">After Effects</p>
+                            <div class="w-full h-[3px] bg-white/10 mt-3"><div class="w-[85%] h-full bg-blue-600 shadow-[0_0_10px_#0062ff]"></div></div>
+                        </div>
+                    </div>
+                    <div class="glass-card p-6 flex items-center gap-5" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" class="w-12 h-12">
+                        <div class="flex-1">
+                            <p class="text-[10px] font-black uppercase text-white">Photoshop</p>
+                            <div class="w-full h-[3px] bg-white/10 mt-3"><div class="w-[90%] h-full bg-blue-600 shadow-[0_0_10px_#0062ff]"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up">
+                <h3 class="section-title">Expertise</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-[9px] font-bold uppercase tracking-widest hover:border-blue-600 transition">Color Grading (Lut's)</span>
+                    <span class="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-[9px] font-bold uppercase tracking-widest hover:border-blue-600 transition">Sound Design & SFX</span>
+                    <span class="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-[9px] font-bold uppercase tracking-widest hover:border-blue-600 transition">Cinematic Storytelling</span>
+                    <span class="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-[9px] font-bold uppercase tracking-widest hover:border-blue-600 transition">Multi-Cam Editing</span>
+                    <span class="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-[9px] font-bold uppercase tracking-widest hover:border-blue-600 transition">Motion Graphics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section-compact space-y-32">
+        
+        <div data-aos="fade-up">
+            <h3 class="section-title">Show Reels</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <iframe class="w-full aspect-video glass-card" src="https://www.youtube.com/embed/0VfB8lHBfMo"></iframe>
+                <iframe class="w-full aspect-video glass-card" src="https://www.youtube.com/embed/K-qs3NmLXUU"></iframe>
+            </div>
+        </div>
+
+        <div data-aos="fade-up">
+            <h3 class="section-title">Motion GFX</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <iframe class="w-full aspect-video glass-card" src="https://www.youtube.com/embed/UAwEiD_tXhM"></iframe>
+                <iframe class="w-full aspect-video glass-card" src="https://www.youtube.com/embed/KwbPhRZtGz8"></iframe>
+                <iframe class="w-full aspect-video glass-card" src="https://www.youtube.com/embed/gIpyciJjcJA"></iframe>
+            </div>
+        </div>
+
+        <div data-aos="fade-up">
+            <h3 class="section-title">Commercial Ads</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <iframe class="w-full aspect-video glass-card" src="https://www.youtube.com/embed/gfBk6CU_GZQ"></iframe>
+                <iframe class="w-full aspect-video glass-card" src="https://www.youtube.com/embed/f5tbeKHT__Y"></iframe>
+                <iframe class="w-full aspect-video glass-card" src="https://www.youtube.com/embed/d23iBFAARdw"></iframe>
+            </div>
+        </div>
+
+        <div data-aos="fade-up">
+            <h3 class="section-title">Video Editing</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <iframe class="w-full aspect-video glass-card" src="https://www.youtube.com/embed/s5bJuZBnw88"></iframe>
+                <iframe class="w-full aspect-video glass-card" src="https://www.youtube.com/embed/jqZTSM1fTSk"></iframe>
+                <iframe class="w-full aspect-video glass-card" src="https://www.youtube.com/embed/tWorWoyiX_M"></iframe>
+            </div>
+        </div>
+
+        <div data-aos="fade-up">
+            <h3 class="section-title">Short Films</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <iframe class="w-full aspect-video glass-card" src="https://www.youtube.com/embed/ff7u5dwzhHw"></iframe>
+                <iframe class="w-full aspect-video glass-card" src="https://www.youtube.com/embed/V2OaYiKd0Mk"></iframe>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="section-compact pb-28">
+        <div class="max-w-xl mx-auto glass-card p-10 text-center" data-aos="flip-up">
+            <h2 class="text-2xl font-black mb-8 uppercase italic tracking-widest text-blue-500">Let's work together</h2>
+            <form action="https://formspree.io/f/shindemahesh0108@gmail.com" method="POST" class="space-y-4">
+                <input type="text" name="name" placeholder="YOUR NAME" required class="w-full p-4 bg-white/5 border border-white/10 rounded outline-none focus:border-blue-500 text-[10px] font-bold text-white uppercase tracking-widest">
+                <input type="email" name="email" placeholder="YOUR EMAIL" required class="w-full p-4 bg-white/5 border border-white/10 rounded outline-none focus:border-blue-500 text-[10px] font-bold text-white uppercase tracking-widest">
+                <textarea name="message" placeholder="TELL ME ABOUT YOUR PROJECT" rows="4" required class="w-full p-4 bg-white/5 border border-white/10 rounded outline-none focus:border-blue-500 text-[10px] font-bold text-white uppercase tracking-widest"></textarea>
+                <button type="submit" class="w-full btn-primary py-4 italic uppercase">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center opacity-30 text-[7px] uppercase tracking-[1.5em]">
+        Mahesh Dilip Shinde © 2026 | Ready to leave a mark?
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('active'); }
+    </script>
+</body>
+</html>
